@@ -23,6 +23,7 @@ export default class Dominoe {
 
   set faceA(value: number) {
     this._faceA = value;
+    this._isDouble = this._faceA === this._faceB;
   }
 
   get faceB(): number {
