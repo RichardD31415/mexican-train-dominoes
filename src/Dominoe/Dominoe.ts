@@ -32,6 +32,7 @@ export default class Dominoe {
 
   set faceB(value: number) {
     this._faceB = value;
+    this._isDouble = this._faceA === this._faceB;
   }
 
   get isDouble(): boolean {
